@@ -47,6 +47,9 @@ body {
   font-family: lato, sans-serif;
   cursor: pointer;
 }
+.all-tasks__button:hover {
+  color: #3a3a3a;
+}
 .all-tasks__button_delete:hover {
   color: #cf2323;
 }
@@ -67,10 +70,6 @@ input,
 button{
   outline: none;
 }
-
-button:hover {
-  color: #3a3a3a;
-}
 /* heading */
 h3 {
   color: #333;
@@ -80,7 +79,7 @@ h3 {
   margin: 0;
   text-transform: uppercase;
 }
-input[type="text"] {
+.all-tasks__task_text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -92,24 +91,20 @@ input[type="text"] {
   font-family: lato, sans-serif;
   color: #888;
 }
-input[type="text"]:focus {
+.all-tasks__task_text:focus {
   color: #333;
 }
 
 /* new task */
-label[for="new-task"] {
-  display: block;
-  margin: 0 0 20px;
-}
-input#new-task {
+.all-tasks_task_new {
   width: 318px;
 }
-p > button:hover {
+.all-tasks__button_add:hover {
   color: #0fc57c;
 }
 
 /* task list */
-li {
+.all-tasks__listitem {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -118,20 +113,20 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-li > * {
+.all-tasks__listitem > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.all-tasks__listitem .all-tasks__task_checkbox {
   margin: 0 10px;
 }
-li > label {
+.all-tasks__listitem .all-tasks__task_label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-li >    input[type="text"] {
+.all-tasks__listitem .all-tasks__task_text {
   width: 226px;
 }
 .all-tasks__img:hover {
@@ -139,21 +134,21 @@ li >    input[type="text"] {
 }
 
 /* completed */
-ul#completed-tasks label {
+ul#completed-tasks .all-tasks__task_label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* edit task */
-ul li input[type=text] {
+.all-tasks__listitem .all-tasks__task_text {
   display: none;
 }
 
-ul li.editMode input[type=text] {
+.editMode .all-tasks__task_text {
   display: inline-block;
   width: 224px;
 }
 
-ul li.editMode label {
+.editMode .all-tasks__task_label {
   display: none;
 }
