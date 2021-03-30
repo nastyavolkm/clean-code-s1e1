@@ -14,13 +14,13 @@
             Want more details?</a>
       </header>
       <main class="all-tasks">
-        <h3>Add Item</h3>  
+        <h3 class="all-tasks__heading">Add Item</h3>  
         <div class="all-tasks__add-item">
           <input id="new-task"class="all-tasks__task all-tasks__task_text all-tasks_task_new" type="text">
           <button class="all-tasks__button all-tasks__button_add">Add</button>
         </div>
-        <h3>Todo</h3>
-        <ul id="incompleteTasks">
+        <h3 class="all-tasks__heading">Todo</h3>
+        <ul class="all-tasks__list_incompleted" id="incompleteTasks">
           <li class="all-tasks__list-item">
             <input class="all-tasks__task_checkbox" type="checkbox"><label class="all-tasks__task all-tasks__task_label">Pay Bills</label>
             <input class="all-tasks__task all-tasks__task_text" type="text">
@@ -38,8 +38,8 @@
             </button>
           </li>
         </ul>
-        <h3>Completed</h3>
-        <ul id="completed-tasks">
+        <h3 class="all-tasks__heading">Completed</h3>
+        <ul class="all-tasks__list_completed" id="completed-tasks">
           <li class="all-tasks__list-item">
             <input class="all-tasks__task_checkbox" type="checkbox" checked><label class="all-tasks__task all-tasks__task_label">See the Doctor</label>
             <input type="text" class="all-tasks__task all-tasks__task_text">
